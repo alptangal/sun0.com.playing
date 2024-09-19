@@ -39,7 +39,6 @@ async def on_ready():
                 'username':msgs[0].content.split('@')[1],
                 'lastMsg':msgs[-1]
             })
-        result = await getBasic(guild)
         
         if not playing.is_running():
             playing.start(guild)
